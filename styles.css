@@ -1,0 +1,69 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #f44336;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.spinner {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: conic-gradient(
+        #f44336 0% 15%,
+        #ffc107 15% 30%,
+        #4caf50 30% 45%,
+        #2196f3 45% 60%,
+        #9c27b0 60% 75%,
+        #e91e63 75% 90%,
+        #ff5722 90% 100%
+    );
+    margin: 0 auto;
+    animation: spin 3s infinite linear;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.spin-button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.spin-button:hover {
+    background-color: #45a049;
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #f44336;
+}
